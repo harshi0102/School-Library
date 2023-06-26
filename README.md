@@ -126,7 +126,6 @@ Feel free to check the [issues page](https://github.com/harshi0102/School-Librar
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
 If you like this project, please star it!
 
@@ -144,6 +143,6 @@ If you like this project, please star it!
 
 ## 📝 License <a name="license"></a>
 
-This project is [licensed](https://github.com/harshi0102/School-Library/blob/development/LICENSE) .
+This project is [MIT licensed](https://github.com/harshi0102/School-Library/blob/development/LICENSE) .
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
