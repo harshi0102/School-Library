@@ -1,12 +1,32 @@
+require_relative 'classroom'
+require_relative 'student'
+require_relative 'book'
+require_relative 'rental'
 require_relative 'person'
-require_relative 'capitalize_decorator'
-require_relative 'trimmer_decorator'
 
-person = Person.new(22, 'maximilianus')
-puts person.correct_name
+# Create a classroom
+classroom = Classroom.new('A101')
 
-capitalized_person = CapitalizeDecorator.new(person)
-puts capitalized_person.correct_name
+# Create students and add them to the classroom
+student1 = Student.new('John Doe')
+student1.join_classroom(classroom)
 
-capitalized_trimmed_person = TrimmerDecorator.new(capitalized_person)
-puts capitalized_trimmed_person.correct_name
+student2 = Student.new('Jane Smith')
+student2.join_classroom(classroom)
+
+# Access the students in the classroom
+puts "Students in #{classroom.label}:"
+classroom.students.each do |student|
+  puts student.name
+end
+
+# Create a book
+book = Book.new('The Great Gatsby', 'F. Scott Fitzgerald')
+
+# Create a person
+person = Person.new('Alice Smith')
+
+# Create a rental linking the person and book
+rental = Rental.new('2023-06-28', book, person)
+person.rentals << rental
+book.rentals << rental
