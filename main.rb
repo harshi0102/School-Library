@@ -2,31 +2,38 @@ require_relative 'classroom'
 require_relative 'student'
 require_relative 'book'
 require_relative 'rental'
-require_relative 'person'
 
 # Create a classroom
-classroom = Classroom.new('A101')
+classroom = Classroom.new("Math Class")
 
-# Create students and add them to the classroom
-student1 = Student.new('John Doe')
-student1.join_classroom(classroom)
+# Create students
+student1 = Student.new("John")
+student2 = Student.new("Alice")
 
-student2 = Student.new('Jane Smith')
-student2.join_classroom(classroom)
+# Add students to the classroom
+classroom.add_student(student1)
+classroom.add_student(student2)
 
-# Access the students in the classroom
-puts "Students in #{classroom.label}:"
+# Create books
+book1 = Book.new("Ruby Programming", "John Smith")
+book2 = Book.new("Python Crash Course", "Jane Doe")
+
+# Create rentals
+rental1 = book1.add_rental(student1, "2023-06-01")
+rental2 = book2.add_rental(student2, "2023-06-15")
+
+# Print classroom information
+puts "Classroom: #{classroom.label}"
+puts "Students in Classroom:"
 classroom.students.each do |student|
-  puts student.name
+  puts "- #{student.name}"
 end
 
-# Create a book
-book = Book.new('The Great Gatsby', 'F. Scott Fitzgerald')
-
-# Create a person
-person = Person.new('Alice Smith')
-
-# Create a rental linking the person and book
-rental = Rental.new('2023-06-28', book, person)
-person.rentals << rental
-book.rentals << rental
+# Print rentals for each student
+puts "\nRentals:"
+classroom.students.each do |student|
+  puts "#{student.name} has rented:"
+  student.rentals.each do |rental|
+    puts "- #{rental.book.title} (Date: #{rental.date})"
+  end
+end

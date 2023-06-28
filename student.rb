@@ -1,9 +1,10 @@
 class Student
-  attr_accessor :name, :classroom
+  attr_accessor :name, :classroom, :rentals
 
   def initialize(name)
     @name = name
     @classroom = nil
+    @rentals = []
   end
 
   def join_classroom(classroom)
