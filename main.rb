@@ -1,39 +1,45 @@
-require_relative 'classroom'
-require_relative 'student'
-require_relative 'book'
-require_relative 'rental'
+require './app'
 
-# Create a classroom
-classroom = Classroom.new('Math Class')
+def main
+  app = App.new
+  status = true
+  puts 'Welcome to School Library App!'
+  while status
+    puts
+    puts 'Please choose an option by entering a number:'
+    puts '1 - List all books'
+    puts '2 - List all people'
+    puts '3 - Create a person'
+    puts '4 - Create a book'
+    puts '5 - Create a rental'
+    puts '6 - List all rentals for a given person id'
+    puts '7 - Exit'
+    option = gets.chomp
 
-# Create students
-student1 = Student.new('John')
-student2 = Student.new('Alice')
-
-# Add students to the classroom
-classroom.add_student(student1)
-classroom.add_student(student2)
-
-# Create books
-book1 = Book.new('Ruby Programming', 'John Smith')
-book2 = Book.new('Python Crash Course', 'Jane Doe')
-
-# Create rentals
-book1.add_rental(student1, '2023-06-01')
-book2.add_rental(student2, '2023-06-15')
-
-# Print classroom information
-puts "Classroom: #{classroom.label}"
-puts 'Students in Classroom:'
-classroom.students.each do |student|
-  puts "- #{student.name}"
-end
-
-# Print rentals for each student
-puts "\nRentals:"
-classroom.students.each do |student|
-  puts "#{student.name} has rented:"
-  student.rentals.each do |rental|
-    puts "- #{rental.book.title} (Date: #{rental.date})"
+    case option
+    when '1'
+      app.all_books
+    when '2'
+      app.all_people
+    when '3'
+      app.create_person
+    when '4'
+      app.create_book
+    when '5'
+      if app.create_rental
+        puts 'Rental created successfully'
+      end
+    when '6'
+      app.all_rentals_id
+    when '7'
+      puts 'Thank you for using this app!'
+      puts
+      status = false
+    else
+      puts 'Sorry, you choose a wrong option'
+      puts
+    end
   end
 end
+
+main

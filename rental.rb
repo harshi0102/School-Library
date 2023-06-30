@@ -1,11 +1,16 @@
-class Rental
-  attr_accessor :date, :book, :person
+#!/usr/bin/env ruby
 
-  def initialize(date, book, person)
+class Rental
+  attr_reader :person, :book
+  attr_accessor :date
+
+  def initialize(date, person, book)
     @date = date
-    @book = book
+
     @person = person
-    book.rentals << self
     person.rentals << self
+
+    @book = book
+    book.rentals << self
   end
 end

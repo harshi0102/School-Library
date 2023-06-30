@@ -1,15 +1,31 @@
-class Person
-  attr_accessor :name, :rentals
+#!/usr/bin/env ruby
+require_relative 'corrector'
+require_relative 'rental'
 
-  def initialize(name)
-    @name = name
+class Person
+  attr_accessor :name, :age
+  attr_reader :id, :rentals
+
+  def initialize(age:, name: 'Unknown', parent_permission: true)
+    @id = Random.rand(1..1000)
+    @corrector = Corrector.new
+    @name = validate_name(name)
+    @age = age
+    @parent_permission = parent_permission
     @rentals = []
   end
 
+  def is_of_age?
+    @age >= 18
+  end
+
+  def validate_name(name)
+    @corrector.correct_name(name)
+  end
+
   def add_rental(book, date)
-    rental = Rental.new(date, book, self)
+    rental = Rental.new(date, self, book)
     @rentals << rental
-    book.rentals << rental
     rental
   end
 end
