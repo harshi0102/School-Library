@@ -1,4 +1,3 @@
-#!/usr/bin/env ruby
 require_relative 'corrector'
 require_relative 'rental'
 
@@ -15,7 +14,7 @@ class Person
     @rentals = []
   end
 
-  def is_of_age?
+  def of_age?
     @age >= 18
   end
 

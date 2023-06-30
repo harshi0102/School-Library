@@ -1,3 +1,6 @@
+#!/usr/bin/env ruby
+# rubocop:disable Metrics/MethodLength
+# rubocop:disable Metrics/CyclomaticComplexity
 require './app'
 
 def main
@@ -26,9 +29,7 @@ def main
     when '4'
       app.create_book
     when '5'
-      if app.create_rental
-        puts 'Rental created successfully'
-      end
+      app.create_rental
     when '6'
       app.all_rentals_id
     when '7'
@@ -40,6 +41,8 @@ def main
       puts
     end
   end
+  # rubocop:enable Metrics/MethodLength
+  # rubocop:enable Metrics/CyclomaticComplexity
 end
 
 main
