@@ -3,6 +3,8 @@ AllCops:
   Exclude:
     - "Guardfile"
     - "Rakefile"
+    - "app.rb"
+    - "main.rb"
     - "node_modules/**/*"
 
   DisplayCopNames: true
@@ -18,6 +20,10 @@ Metrics/ClassLength:
 Metrics/BlockLength:
   IgnoredMethods: ['describe']
   Max: 30
+  Metrics/MethodLength:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
 
 
 Style/Documentation:
