@@ -1,5 +1,3 @@
-# rubocop:disable Metrics/MethodLength
-# rubocop:disable Metrics/CyclomaticComplexity
 require './app'
 
 def main
@@ -40,8 +38,6 @@ def main
       puts
     end
   end
-  # rubocop:enable Metrics/MethodLength
-  # rubocop:enable Metrics/CyclomaticComplexity
 end
 
 main
