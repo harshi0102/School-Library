@@ -18,7 +18,7 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
+<!-- PROJECT DESCRIPTION --->
 
 # 📖 OOP school library: add Person, Student and Teacher classes
  <a name="about-project"></a>
