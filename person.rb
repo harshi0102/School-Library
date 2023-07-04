@@ -14,8 +14,8 @@ class Person < Nameable
     @parent_permission = parent_permission
     @rentals = []
   end
-  # rubocop:enable Style/OptionalBooleanParameter
 
+  # rubocop:enable Style/OptionalBooleanParameter
   def add_rental(date, book)
     Rental.new(date, self, book)
   end

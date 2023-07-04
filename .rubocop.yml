@@ -5,6 +5,7 @@ AllCops:
     - "Rakefile"
     - "app.rb"
     - "main.rb"
+    - 'nameable.rb'
     - "node_modules/**/*"
 
   DisplayCopNames: true
@@ -38,6 +39,13 @@ Style/DefWithParentheses:
   Enabled: false
 Style/FrozenStringLiteralComment:
   EnforcedStyle: never
+Style/OptionalBooleanParameter:
+  Enabled: false
+Style/OptionalBooleanParameter:
+  Enabled: true
+Style/OptionalBooleanParameter:
+  Enabled: true
+  EnforcedStyle: keyword_arguments  
 
 Layout/HashAlignment:
   EnforcedColonStyle: key

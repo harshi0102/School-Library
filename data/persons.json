@@ -46,5 +46,17 @@
     "name": "2",
     "age": 2,
     "parent_permission": true
+  },
+  {
+    "occupation": "Student",
+    "name": "1",
+    "age": 1,
+    "parent_permission": true
+  },
+  {
+    "occupation": "Student",
+    "name": "h",
+    "age": 0,
+    "parent_permission": true
   }
 ]
