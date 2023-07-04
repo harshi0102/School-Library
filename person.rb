@@ -5,7 +5,6 @@ class Person < Nameable
   attr_reader :id
   attr_accessor :name, :age, :rentals, :parent_permission
 
-  # rubocop:disable Style/OptionalBooleanParameter
   def initialize(age, name = 'Unknown', parent_permission = true)
     super()
     @id = Random.rand(1...1000)
@@ -15,7 +14,6 @@ class Person < Nameable
     @rentals = []
   end
 
-  # rubocop:enable Style/OptionalBooleanParameter
   def add_rental(date, book)
     Rental.new(date, self, book)
   end
