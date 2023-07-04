@@ -20,7 +20,7 @@
 
 <!-- PROJECT DESCRIPTION ---->
 
-# 📖 OOP school library
+# 📖 OOP school library: add Person, Student and Teacher classes
  <a name="about-project"></a>
 
 > In this project, you will start building your school library app. In this initial step, you will implement the classes to represent students and teachers.
@@ -98,12 +98,6 @@ Example command:
 
 - GitHub: [@harshi0102](https://github.com/harshi0102)
 - Linkedin: [@harshikagovind](https://www.linkedin.com/in/harshikagovind/)
-
-👤**Daniel Kigozi**
-
-- GitHub: [Daniel-Kigozi](https://github.com/Daniel-Kigozi)
-- Twitter: [@DanielKigozi15](https://twitter.com/@DanielKigozi15)
-- LinkedIn: [daniel-kigozi-375182208/](https://www.linkedin.com/in/daniel-kigozi-375182208/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
