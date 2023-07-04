@@ -1,0 +1,50 @@
+[
+  {
+    "occupation": "Student",
+    "name": "Nuri",
+    "age": 44,
+    "parent_permission": true
+  },
+  {
+    "occupation": "Teacher",
+    "name": "Dejan",
+    "age": 55,
+    "specialization": "Rails"
+  },
+  {
+    "occupation": "Student",
+    "name": "Ardit",
+    "age": 12,
+    "parent_permission": false
+  },
+  {
+    "occupation": "Student",
+    "name": "Marta",
+    "age": 23,
+    "parent_permission": true
+  },
+  {
+    "occupation": "Teacher",
+    "name": "3",
+    "age": 3,
+    "specialization": "3"
+  },
+  {
+    "occupation": "Student",
+    "name": "2",
+    "age": 2,
+    "parent_permission": false
+  },
+  {
+    "occupation": "Student",
+    "name": "1",
+    "age": 1,
+    "parent_permission": false
+  },
+  {
+    "occupation": "Student",
+    "name": "2",
+    "age": 2,
+    "parent_permission": true
+  }
+]
