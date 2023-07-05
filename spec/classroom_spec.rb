@@ -9,12 +9,12 @@ describe Classroom do
     end
 
     it 'should add a student correctly to the classroom' do
-        student = Student.new(44, 'English', name: 'Harshika')
-      
-        english_classroom = Classroom.new('English')
-        english_classroom.add_students(student)
-      
-        expect(english_classroom.students[0].name).to eq('Harshika')
-      end
+      student = Student.new(44, 'English', name: 'Harshika')
+
+      english_classroom = Classroom.new('English')
+      english_classroom.add_students(student)
+
+      expect(english_classroom.students[0].name).to eq('Harshika')
+    end
   end
 end
