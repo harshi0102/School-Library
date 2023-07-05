@@ -86,6 +86,7 @@ Example command:
 
 ```sh
   ruby main.rb
+  run test rspec
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
