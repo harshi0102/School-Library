@@ -1,7 +1,7 @@
 [
   {
     "occupation": "Student",
-    "name": "Nuri",
+    "name": "Harshika",
     "age": 44,
     "parent_permission": true
   },
@@ -57,6 +57,18 @@
     "occupation": "Student",
     "name": "h",
     "age": 0,
+    "parent_permission": true
+  },
+  {
+    "occupation": "Student",
+    "name": "1",
+    "age": 1,
+    "parent_permission": false
+  },
+  {
+    "occupation": "Student",
+    "name": "1",
+    "age": 1,
     "parent_permission": true
   }
 ]
