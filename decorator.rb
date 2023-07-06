@@ -25,6 +25,7 @@ end
 
 class TrimmerDecorator < Decorator
   def correct_name
-    @nameable.correct_name.slice(0, 10) unless @nameable.correct_name.length <= 10
+    trimmed_name = @nameable.correct_name
+    trimmed_name.length > 10 ? trimmed_name.slice(0, 10) : trimmed_name
   end
 end

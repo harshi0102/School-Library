@@ -88,5 +88,53 @@
     "name": "bo",
     "age": 22,
     "specialization": "travel"
+  },
+  {
+    "occupation": "Student",
+    "name": "1",
+    "age": 1,
+    "parent_permission": true
+  },
+  {
+    "occupation": "Student",
+    "name": "1",
+    "age": 1,
+    "parent_permission": false
+  },
+  {
+    "occupation": "Teacher",
+    "name": "2",
+    "age": 2,
+    "specialization": "2"
+  },
+  {
+    "occupation": "Student",
+    "name": "1",
+    "age": 1,
+    "parent_permission": true
+  },
+  {
+    "occupation": "Student",
+    "name": "1",
+    "age": 1,
+    "parent_permission": false
+  },
+  {
+    "occupation": "Teacher",
+    "name": "2",
+    "age": 2,
+    "specialization": "2"
+  },
+  {
+    "occupation": "Student",
+    "name": "1",
+    "age": 1,
+    "parent_permission": true
+  },
+  {
+    "occupation": "Student",
+    "name": "1",
+    "age": 1,
+    "parent_permission": true
   }
 ]
